@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AC05AB4-A0AB-4724-9690-0FFD19CD92AD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FPDCompare</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libxl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libxl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\enum.h" />
+    <ClInclude Include="..\include\IBookT.h" />
+    <ClInclude Include="..\include\IFontT.h" />
+    <ClInclude Include="..\include\IFormatT.h" />
+    <ClInclude Include="..\include\ISheetT.h" />
+    <ClInclude Include="..\include\libxl.h" />
+    <ClInclude Include="..\include\setup.h" />
+    <ClInclude Include="CommonAll.h" />
+    <ClInclude Include="Comparator.h" />
+    <ClInclude Include="ConfigReader.h" />
+    <ClInclude Include="ConfigurationStorage.h" />
+    <ClInclude Include="CopyFileStorage.h" />
+    <ClInclude Include="DataFileInfo.h" />
+    <ClInclude Include="ExcelFileGenerator.h" />
+    <ClInclude Include="FileDumpCreator.h" />
+    <ClInclude Include="FPDReader.h" />
+    <ClInclude Include="KeyExtractor.h" />
+    <ClInclude Include="KeyInfo.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="MatchResource.h" />
+    <ClInclude Include="MetaFileInfo.h" />
+    <ClInclude Include="MetaPropertSubValue_DateTime.h" />
+    <ClInclude Include="MetaPropertSubValue_FileName.h" />
+    <ClInclude Include="MetaPropertSubValue_Integer.h" />
+    <ClInclude Include="MetaPropertSubValue_String.h" />
+    <ClInclude Include="MetaProperty.h" />
+    <ClInclude Include="MetaPropertySubValue.h" />
+    <ClInclude Include="MetaPropertyValue.h" />
+    <ClInclude Include="MetaReader.h" />
+    <ClInclude Include="MismatchResource.h" />
+    <ClInclude Include="OutputCollector.h" />
+    <ClInclude Include="OutputGenerator.h" />
+    <ClInclude Include="ResourceCrawler.h" />
+    <ClInclude Include="ResourceModificationInfo.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Summary.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Comparator.cpp" />
+    <ClCompile Include="ConfigReader.cpp" />
+    <ClCompile Include="ConfigurationStorage.cpp" />
+    <ClCompile Include="CopyFileStorage.cpp" />
+    <ClCompile Include="DataFileInfo.cpp" />
+    <ClCompile Include="ExcelFileGenerator.cpp" />
+    <ClCompile Include="FileDumpCreator.cpp" />
+    <ClCompile Include="KeyInfo.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="FPDReader.cpp" />
+    <ClCompile Include="KeyExtractor.cpp" />
+    <ClCompile Include="MatchResource.cpp" />
+    <ClCompile Include="MetaFileInfo.cpp" />
+    <ClCompile Include="MetaPropertSubValue_DateTime.cpp" />
+    <ClCompile Include="MetaPropertSubValue_FileName.cpp" />
+    <ClCompile Include="MetaPropertSubValue_Integer.cpp" />
+    <ClCompile Include="MetaPropertSubValue_String.cpp" />
+    <ClCompile Include="MetaProperty.cpp" />
+    <ClCompile Include="MetaPropertySubValue.cpp" />
+    <ClCompile Include="MetaPropertyValue.cpp" />
+    <ClCompile Include="MetaReader.cpp" />
+    <ClCompile Include="MismatchResource.cpp" />
+    <ClCompile Include="OutputCollector.cpp" />
+    <ClCompile Include="OutputGenerator.cpp" />
+    <ClCompile Include="ResourceCrawler.cpp" />
+    <ClCompile Include="ResourceModificationInfo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Summary.cpp" />
+    <ClCompile Include="Utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

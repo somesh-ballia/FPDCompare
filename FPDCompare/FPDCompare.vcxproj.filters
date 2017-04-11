@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Excel">
+      <UniqueIdentifier>{96d7f2a6-70e3-41a4-9ab2-2946e02528e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Storage">
+      <UniqueIdentifier>{4ac079f4-c318-4b43-bf6d-da976508e941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{e9f3a940-a4e4-4a1f-a8d6-197699bd12d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Storage">
+      <UniqueIdentifier>{21f850d1-a5f5-42b0-88fe-175ba25d01d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{ab5e7409-98e1-481d-b65a-77a59ff1faff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Storage\MetaProperty">
+      <UniqueIdentifier>{f18ff06a-8f5e-45e6-94cb-8fc1b97b8690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Storage\MetaProperty">
+      <UniqueIdentifier>{d875c2f9-9d91-4d3a-9fe2-15e476a8017f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonAll.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationStorage.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertSubValue_DateTime.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertSubValue_FileName.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertSubValue_Integer.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertSubValue_String.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaProperty.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertySubValue.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaPropertyValue.h">
+      <Filter>Header Files\Storage\MetaProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="DataFileInfo.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Summary.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Comparator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyExtractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FPDReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputCollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCrawler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcelFileGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\enum.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IBookT.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IFontT.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IFormatT.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ISheetT.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\libxl.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\setup.h">
+      <Filter>Header Files\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaFileInfo.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchResource.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="MismatchResource.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyInfo.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceModificationInfo.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDumpCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CopyFileStorage.h">
+      <Filter>Header Files\Storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationStorage.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertSubValue_DateTime.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertyValue.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertySubValue.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaProperty.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertSubValue_String.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertSubValue_Integer.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaPropertSubValue_FileName.cpp">
+      <Filter>Source Files\Storage\MetaProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="DataFileInfo.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="Summary.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Comparator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyExtractor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FPDReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputCollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCrawler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelFileGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetaFileInfo.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchResource.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="MismatchResource.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyInfo.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceModificationInfo.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDumpCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyFileStorage.cpp">
+      <Filter>Source Files\Storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
